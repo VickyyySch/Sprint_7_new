@@ -1,4 +1,4 @@
-package testsOrder;
+package testsorder;
 
 import order.*;
 import io.qameta.allure.Description;

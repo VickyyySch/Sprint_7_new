@@ -1,4 +1,4 @@
-package testsOrder;
+package testsorder;
 
 import order.*;
 import io.qameta.allure.Description;
@@ -42,7 +42,7 @@ public class TestParamOrder {
 
     @After
     @Step("Cancel test order")
-    public void CancelTestOrder() {
+    public void cancelTestOrder() {
         partOrder.cancelOrder(track);
     }
 

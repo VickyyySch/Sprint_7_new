@@ -1,4 +1,4 @@
- package testsCourier;
+ package testscourier;
 
 import courier.*;
 import io.qameta.allure.Description;
@@ -48,7 +48,7 @@ public class CreateTest {
     public void courierCanNotBeCreatedWithoutLogin() {
         modelCourier.setLogin(null);
         ValidatableResponse responseNullLogin = partCourier.createCourier(modelCourier);
-        assertCourier.CourierError(responseNullLogin);
+        assertCourier.courierError(responseNullLogin);
     }
 
     @Test
@@ -57,7 +57,7 @@ public class CreateTest {
     public void courierCanNotBeCreatedWithoutPassword() {
         modelCourier.setPassword(null);
         ValidatableResponse responseNullPassword = partCourier.createCourier(modelCourier);
-        assertCourier.CourierError(responseNullPassword);
+        assertCourier.courierError(responseNullPassword);
     }
 
     @Test
@@ -67,7 +67,7 @@ public class CreateTest {
         modelCourier.setLogin(null);
         modelCourier.setPassword(null);
         ValidatableResponse responseNullFields = partCourier.createCourier(modelCourier);
-        assertCourier.CourierError(responseNullFields);
+        assertCourier.courierError(responseNullFields);
     }
 
     @Test
